@@ -1,0 +1,19 @@
+```json
+{"exec-mode":"default","platform":"WPF","uti":"com.xamarin.workbook","packages":[]}
+```
+
+I’m not sure what’s going on **here**, but I’m glad it’s in *BETA*.
+
+```csharp
+void stdout(string message) => Console.Write(message);
+void stderr(string message) => Console.Error.Write(message);
+```
+
+```csharp
+stdout("not an error, "); stderr("but this is! "); stdout(" and this isn't");
+```
+
+```csharp
+stdout("Hello "); stderr("World!");
+```
+
